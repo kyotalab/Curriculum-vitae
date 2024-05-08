@@ -49,6 +49,39 @@
   - 使用した技術: AWS, EC2, RDS, CloudWatch, Lambda, EventBridge
   - 達成した成果: サービスの安定運用とスケーラビリティの向上
 
+## スキル・技術経験
+
+- **プログラミング言語**:
+  - Ruby
+  - Python
+  - Java
+  - JavaScript (Node.js)
+  - React
+  - Next.js
+
+- **開発ツール**:
+  - AWS (Amazon Web Services)
+  - GitHub
+
+## プロジェクトでの役割や貢献内容
+
+- ポートフォリオ開発:
+  - RubyやRuby on Railsを使用してポートフォリオを開発。
+  - PythonやJavaを用いたバックエンドの開発。
+  - JavaScript(Node.js)、React、Next.jsを使用したフロントエンドの開発。
+  - インフラ環境構築とAWSを利用したポートフォリオの公開。
+
+## 開発したシステムやアプリケーションの概要
+
+- インフラ環境:
+  - AWSを利用したインフラ構築と管理。
+  - EC2、CloudWatch、SES、Lambda、IAM、Aurora、ALB、S3、Certificate ManagerなどのAWSサービスを利用。
+
+- ポートフォリオアプリケーション:
+  - Ruby on Railsを使用したポートフォリオアプリケーションの開発。
+  - サーバーサイドとフロントエンドの開発、データベース設計と管理。
+  - PythonやJavaを用いたバックエンドの開発、JavaScript(Node.js)、React、Next.jsを使用したフロントエンドの開発。
+
 ## 学歴
 - **最終学歴**: 立教大学
   - 異文化コミュニケーション学部・学科
