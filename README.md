@@ -51,17 +51,43 @@
 
 ## スキル・技術経験
 
-- **プログラミング言語**:
-  - Ruby
-  - Python
-  - Java
-  - JavaScript (Node.js)
-  - React
-  - Next.js
+### プログラミング言語
+- Ruby
+- Python
+- Java
+- JavaScript (Node.js)
+- React
+- Next.js
 
-- **開発ツール**:
-  - AWS (Amazon Web Services)
-  - GitHub
+### フレームワーク
+- Ruby on Rails
+- Spring Boot
+- React.js
+- Next.js
+
+### データベース
+- PostgreSQL
+- MySQL
+- Amazon RDS (MySQL, PostgreSQL)
+
+### コード管理
+- Git (GitHub)
+- バージョン管理
+- プルリクエストの作成とレビュー
+- ブランチのマージと解決
+
+### インフラ
+- AWS (Amazon Web Services)
+  - EC2
+  - S3
+  - RDS (MySQL, PostgreSQL)
+  - Lambda
+  - IAM
+  - CloudWatch
+- Docker
+- Nginx
+- Apache HTTP Server
+
 
 ## プロジェクトでの役割や貢献内容
 
