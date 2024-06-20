@@ -9,9 +9,9 @@
 - **在籍期間**: 2021年10月1日から現在に至る
 
 #### 参画プロジェクト: データ伝送システム基盤（AWS）の運用・保守
-- **参画期間**: 2021年11月1日から2024年3月31日
+- **参画期間**: 2021年11月1日から現在
 - **概要**
-  - AWSを基盤とするデータ伝送システムの運用・保守を担当しました。
+  - AWSを基盤とするデータ伝送システムの運用・保守を担当しています。
   - サービスメンテナンス手順書の作成と維持
   - 証明書管理とACMの更新
   - サーバ証明書の更新にはEC2インスタンスSSH接続を使用
@@ -77,12 +77,38 @@
 
 ### インフラ
 - AWS (Amazon Web Services)
-  - EC2
-  - S3
-  - RDS (MySQL, PostgreSQL)
-  - Lambda
-  - IAM
-  - CloudWatch
+  - コンピューティング
+    - Amazon EC2
+    - Amazon Lightsail
+  - ネットワーキング・コンテンツ配信
+    - Amazon CloudFront
+    - Elastic Load Balancing
+    - Route 53
+  - データベース
+    - Amazon Aurora
+    - Amazon RDS
+  - ストレージ
+    - Amazon EBS
+    - Amazon S3
+  - サーバーレス
+    - Amazon EventBridge
+    - AWS Lambda
+  - マネジメントとガバナンス
+    - AWS CloudFormation
+    - AWS CloudTrail
+    - Amazon CloudWatch
+    - Auto Scaling
+    - AWS Organizations
+    - AWS Systems Manager
+  - セキュリティ・アイデンティティ、コンプライアンス
+    - AWS IAM Identity Center
+    - AWS Secrets Manager
+    - AWS WAF
+  - ビジネスアプリケーション
+    - Simple Email Service(SES)
+  - 暗号化とPKI
+    - AWS Certificate Manager
+    - AWS KMS
 - Docker
 - Nginx
 - Apache HTTP Server
