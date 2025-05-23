@@ -9,16 +9,15 @@
 - **在籍期間**: 2021年10月1日から現在に至る
 
 #### 参画プロジェクト: データ伝送システム基盤（AWS）の運用・保守
-- **参画期間**: 2021年11月1日から現在
+- **参画期間**: 2023年11月1日から現在
 - **概要**
-  - AWS基盤の開発・運用保守
+  - AWS基盤の運用保守と継続的な構成改善
   - PCI-DSS 4.0準拠対応: IAMポリシー見直し、暗号化設定、ログ監査、OS/ミドルウェア更新
-  - プライベート接続開発: HULFT Squareとオンプレ環境を接続（AWS PrivateLink、Direct Connect、Site-to-Site VPN）
-  - HULFT関連業務: HULFT Squareおよび、HULFT10のフィージビリティテスト
-  - リソース監視自動化: CloudWatch、EventBridge、Lambdaを活用した異常検知・自動リカバリー
-  - プロジェクト名: データ伝送システム基盤（AWS）
-  - 使用した技術: AWS, EC2, RDS, CloudWatch, Lambda, EventBridge
-  - 達成した成果: サービスの安定運用とスケーラビリティの向上
+  - プライベート接続設計: HULFT Squareとオンプレ環境を接続（AWS PrivateLink、Direct Connect、Site-to-Site VPN）
+  - 監視自動化: CloudWatch、EventBridge、Lambdaを用いた異常検知・通知・自動リカバリーの仕組みを構築
+  - IaCによる構成管理：CloudFormationテンプレートを活用した定型化とドキュメント整備
+  - 使用した技術: AWS（EC2, RDS, Lambda, EventBridge, CloudWatch, IAM, S3, CloudFormation）
+  - 成果: アラート精度の向上と運用対応負荷の削減を実現し、SLA維持に貢献
 
 #### 参画プロジェクト: データ伝送システムの運用・保守
 - **参画期間**: 2021年12月1日から2023年10月31日
@@ -45,87 +44,74 @@
 ## スキル・技術経験
 
 ### プログラミング言語
-- Ruby
-- Python
-- Java
-- JavaScript (Node.js)
-- React
-- Next.js
+- Rust（CLI / ログ解析 / TUIツール開発）
+- Go（CLIツール試作、API設計学習）
+- Python（業務でのLambda自動化やログ処理に使用）
 
-### フレームワーク
-- Ruby on Rails
-- Spring Boot
-- React.js
-- Next.js
+### IaC / 自動化
+- AWS CloudFormation（構成テンプレート管理）
+- シェルスクリプト（監視・自動化タスク）
 
 ### データベース
-- PostgreSQL
-- MySQL
-- Amazon RDS (MySQL, PostgreSQL)
+- Amazon RDS（MySQL / PostgreSQL）
+- SQLite（ローカルCLIツール開発で使用）
 
-### コード管理
-- Git (GitHub)
-- バージョン管理
-- プルリクエストの作成とレビュー
-- ブランチのマージと解決
+### コード管理・CI/CD
+- Git（GitHubを用いたチーム開発、レビュー・ブランチ管理経験あり）
+- GitHub Actions（CI/CDパイプライン構築に活用）
 
-### インフラ
-- AWS (Amazon Web Services)
-  - コンピューティング
-    - Amazon EC2
-    - Amazon Lightsail
-  - ネットワーキング・コンテンツ配信
-    - Amazon CloudFront
-    - Elastic Load Balancing
-    - Route 53
-  - データベース
-    - Amazon Aurora
-    - Amazon RDS
-  - ストレージ
-    - Amazon EBS
-    - Amazon S3
-  - サーバーレス
-    - Amazon EventBridge
-    - AWS Lambda
-  - マネジメントとガバナンス
-    - AWS CloudFormation
-    - AWS CloudTrail
-    - Amazon CloudWatch
-    - Auto Scaling
-    - AWS Organizations
-    - AWS Systems Manager
-  - セキュリティ・アイデンティティ、コンプライアンス
-    - AWS IAM Identity Center
-    - AWS Secrets Manager
-    - AWS WAF
-  - ビジネスアプリケーション
-    - Simple Email Service(SES)
-  - 暗号化とPKI
-    - AWS Certificate Manager
-    - AWS KMS
-- Docker
-- Nginx
-- Apache HTTP Server
+### クラウド・インフラ（AWS）
+- AWS全般（3年以上）
+  - 運用・自動化: CloudWatch, EventBridge, Lambda, CloudFormation, IAM
+  - サーバレス: Lambda, API Gateway, SES
+  - ストレージ・配信: S3, CloudFront, Certificate Manager
+  - データベース: RDS（MySQL / PostgreSQL）, Aurora
+  - ネットワーク: VPC, Direct Connect, PrivateLink, ALB
+  - セキュリティ: IAMポリシー, KMS, Secrets Manager, WAF
+  - ガバナンス・統制: AWS Organizations, Service Control Policies（SCP）, CloudTrail, Systems Manager
+
+### コンテナ / ミドルウェア
+- Docker（ローカル開発環境で使用）
+- Apache / Nginx（設定経験あり）
+
+### その他ツール・言語
+- Markdown / YAML（ドキュメント・構成管理）
+- Shellスクリプト（運用スクリプトの自動化）
 
 
-## プロジェクトでの役割や貢献内容
+## 技術活動・個人開発
 
-- ポートフォリオ開発:
-  - RubyやRuby on Railsを使用してポートフォリオを開発。
-  - PythonやJavaを用いたバックエンドの開発。
-  - JavaScript(Node.js)、React、Next.jsを使用したフロントエンドの開発。
-  - インフラ環境構築とAWSを利用したポートフォリオの公開。
+- RustやGoを用いたCLIツール・ログ解析ツールなどを個人開発
+  - GCログからPause時間を抽出・可視化するツール（RustでCSV出力、Pythonでグラフ描画）
+  - Zettelkasten的なメモ管理を支援するTUIツール（現在開発中）
+- 開発では「自動化」「可視化」「再現性ある構成」を常に意識し、運用に活かせる知見を蓄積
+- GitHub上でのコード公開を通じてアウトプットを継続中
+
+- いずれも「繰り返し作業の削減」「運用の再現性確保」「内省と改善に役立つ仕組みづくり」を重視して設計
+
+- CLI/TUIのUI設計や、構成の可搬性、ログの構造化など、日常の運用改善に直結する技術スタックの探究を継続中
+
+- GitHub上にコードを公開し、ログ分析や構成管理の知見を社外にも還元できるよう努めている
 
 ## 開発したシステムやアプリケーションの概要
 
-- インフラ環境:
-  - AWSを利用したインフラ構築と管理。
-  - EC2、CloudWatch、SES、Lambda、IAM、Aurora、ALB、S3、Certificate ManagerなどのAWSサービスを利用。
+- インフラ構築・運用の知見を個人開発にも応用し、以下のようなツール・仕組みを実装：
 
-- ポートフォリオアプリケーション:
-  - Ruby on Railsを使用したポートフォリオアプリケーションの開発。
-  - サーバーサイドとフロントエンドの開発、データベース設計と管理。
-  - PythonやJavaを用いたバックエンドの開発、JavaScript(Node.js)、React、Next.jsを使用したフロントエンドの開発。
+### ログ解析ツール（Rust）
+- JavaのG1GCログを解析し、Pause時間の推移をCSV形式に変換
+- RustのPlottersクレートを用いて、Pause時間の折れ線グラフを生成
+- サービスのメモリ傾向やボトルネック検出に役立つ自動分析ツールとして活用
+
+### ノート管理CLI / TUIツール（Rust）
+- Zettelkastenの思想をベースに、Markdown形式でメモを記録・分類・リンク管理
+- ReflectやLogなど、思考と行動の記録を助ける構造を実装
+- TUI空間で日々の習慣や構想を一元的に扱う「知的作業空間」として開発中
+
+### IaC自動化支援ツール（Rust）
+- AWS CloudFormationのYAMLテンプレートをCSVから自動生成するCLIツールを試作中
+- サーバレス構成やVPC構成など、反復構成の高速化・誤入力防止を目的に設計
+
+- いずれも「再現性ある運用」「構成の見える化」「改善可能性の確保」を目的に設計・改善を継続
 
 ## 学歴
 - **最終学歴**: 立教大学
@@ -139,12 +125,3 @@
 - AWS-SOA (AWS Certified SysOps Administrator - Associate)
 - LPIC 201（202は未取得）
 
-## その他の活動
-
-- プログラミングスクール卒業後、RubyやRuby on Railsを使用したポートフォリオ開発に取り組む。
-- AWSに興味を持ち始め、独学で以下資格を取得。
-  - AWS-SAA (AWS Certified Solutions Architect - Associate)
-  - AWS-DVA (AWS Certified Developer - Associate)
-  - AWS-SOA (AWS Certified SysOps Administrator - Associate)
-- ポートフォリオを公開するためのインフラ環境構築を学び、AWSに関する知識とスキルを着実に身につける。
-- GitHubでコードやプロジェクトを公開し、コミュニティに参加しながら技術的な成長を図る。
