@@ -11,17 +11,11 @@
 #### 参画プロジェクト: データ伝送システム基盤（AWS）の運用・保守
 - **参画期間**: 2021年11月1日から現在
 - **概要**
-  - AWSを基盤とするデータ伝送システムの運用・保守を担当しています。
-  - サービスメンテナンス手順書の作成と維持
-  - 証明書管理とACMの更新
-  - サーバ証明書の更新にはEC2インスタンスSSH接続を使用
-  - RDSのバージョン管理とアップグレード計画の策定
-  - CloudWatchを活用したメトリクスおよびアラームの監視と運用
-  - Cron実行シェルの管理と改善
-  - EC2インスタンスタイプの変更とキャパシティプランニング
-  - EBSボリュームの変更とストレージ管理
-  - EC2インスタンスでのLVM（Logical Volume Manager）の構築と管理
-  - EventBridgeルールの整備とLambda関数の実装
+  - AWS基盤の開発・運用保守
+  - PCI-DSS 4.0準拠対応: IAMポリシー見直し、暗号化設定、ログ監査、OS/ミドルウェア更新
+  - プライベート接続開発: HULFT Squareとオンプレ環境を接続（AWS PrivateLink、Direct Connect、Site-to-Site VPN）
+  - HULFT関連業務: HULFT Squareおよび、HULFT10のフィージビリティテスト
+  - リソース監視自動化: CloudWatch、EventBridge、Lambdaを活用した異常検知・自動リカバリー
   - プロジェクト名: データ伝送システム基盤（AWS）
   - 使用した技術: AWS, EC2, RDS, CloudWatch, Lambda, EventBridge
   - 達成した成果: サービスの安定運用とスケーラビリティの向上
